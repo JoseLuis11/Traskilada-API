@@ -1,3 +1,5 @@
+using System;
+
 namespace TraskiladaWebAPI.Models
 {
     public class CashOut : BaseModel
