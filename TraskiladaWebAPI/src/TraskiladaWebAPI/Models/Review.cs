@@ -8,5 +8,6 @@ namespace TraskiladaWebAPI.Models
         public int WorkPlaceId { get; set; }
 
         public User User { get; set; }
+        public WorkPlace WorkPlace { get; set; }
     }
 }
