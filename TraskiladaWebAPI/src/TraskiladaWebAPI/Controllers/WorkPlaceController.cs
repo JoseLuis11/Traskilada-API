@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -7,31 +7,32 @@ using Microsoft.AspNetCore.Mvc;
 namespace TraskiladaWebAPI.Controllers
 {
     [Route("api/[controller]")]
-    public class EmployeeController : Controller
+    public class WorkPlaceController : Controller
     {
-        // GET api/employee
+
+        // GET api/values
         [HttpGet]
-        public IEnumerable<Employee> Get()
+        public IEnumerable<string> Get()
         {
-            return null;
+            return new string[] { "value1", "value2" };
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public Employee Get(int id)
+        public string Get(int id)
         {
-            return null;
+            return "value";
         }
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]Employee value)
+        public void Post([FromBody]string value)
         {
         }
 
         // PUT api/values/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]Employee value)
+        public void Put(int id, [FromBody]string value)
         {
         }
 
@@ -40,5 +41,6 @@ namespace TraskiladaWebAPI.Controllers
         public void Delete(int id)
         {
         }
+
     }
 }
