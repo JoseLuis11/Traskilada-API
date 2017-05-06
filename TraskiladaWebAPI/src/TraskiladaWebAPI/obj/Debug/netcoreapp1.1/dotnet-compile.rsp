@@ -183,6 +183,7 @@
 /mnt/data/hacking/projects/Traskilada/Traskilada-API/TraskiladaWebAPI/src/TraskiladaWebAPI/Startup.cs
 /mnt/data/hacking/projects/Traskilada/Traskilada-API/TraskiladaWebAPI/src/TraskiladaWebAPI/Repositories/GenericRepository.cs
 /mnt/data/hacking/projects/Traskilada/Traskilada-API/TraskiladaWebAPI/src/TraskiladaWebAPI/Repositories/IGenericRepository.cs
+/mnt/data/hacking/projects/Traskilada/Traskilada-API/TraskiladaWebAPI/src/TraskiladaWebAPI/Context/TraskiladaContext.cs
 /mnt/data/hacking/projects/Traskilada/Traskilada-API/TraskiladaWebAPI/src/TraskiladaWebAPI/Controllers/ValuesController.cs
 /mnt/data/hacking/projects/Traskilada/Traskilada-API/TraskiladaWebAPI/src/TraskiladaWebAPI/Controllers/StoreController.cs
 /mnt/data/hacking/projects/Traskilada/Traskilada-API/TraskiladaWebAPI/src/TraskiladaWebAPI/Models/WorkPlace.cs

@@ -10,7 +10,7 @@ using TraskiladaWebAPI.Models;
 
 namespace TraskiladaWebAPI.Repositories
 {
-      public class GenericRepository<T> : IGenericRepository<T> where T : BaseModel
+    public class GenericRepository<T> : IGenericRepository<T> where T : BaseModel
     {
         private readonly DbSet<T> _dbSet;
 
@@ -31,8 +31,7 @@ namespace TraskiladaWebAPI.Repositories
             .SingleAsync(predicate, cancellationToken);
 
         public Task<EntityEntry<T>> AddAsync(T entity,
-            CancellationToken cancellationToken = new CancellationToken()) => _dbSet.AddAsync(entity,
-            cancellationToken);
+            CancellationToken cancellationToken = new CancellationToken()) => _dbSet.AddAsync(entity, cancellationToken);
 
         public EntityEntry<T> Remove(T entity) => _dbSet.Remove(entity);
 

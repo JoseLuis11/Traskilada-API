@@ -5,11 +5,7 @@ namespace TraskiladaWebAPI.Context
 {
     public class TraskiladaContext : DbContext
     {
-        private IGenericRepository<Person> _personRepository;
-        private IGenericRepository<SocioEconomicStudy> _socioEconomicStudyRepository;
-        private IGenericRepository<Relative> _relativeRepository;
-        private IGenericRepository<User> _userRepository;
-        private IGenericRepository<Device> _deviceRepository;
+        // private IGenericRepository<Person> _personRepository;
 
         public TraskiladaContext(DbContextOptions options) : base(options)
         {
