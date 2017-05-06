@@ -9,6 +9,8 @@ namespace TraskiladaWebAPI.Models
         public ICollection<WorkPlace> Workplaces { get; set; }
         public ICollection<Service> Services { get; set; }
         public ICollection<Appointment> Appointments { get; set; }
+        public int WorkPlaceId { get; set; }
+
         [NotMapped]
         public bool IsOwner => Workplaces.Count > 0;
 
