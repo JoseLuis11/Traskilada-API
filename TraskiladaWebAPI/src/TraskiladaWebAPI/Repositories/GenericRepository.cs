@@ -35,7 +35,7 @@ namespace TraskiladaWebAPI.Repositories
 
         public EntityEntry<T> Remove(T entity) => _dbSet.Remove(entity);
 
-        public EntityEntry<T> RemoveById(Guid id) => _dbSet.Remove(_dbSet.Find(id));
+        public EntityEntry<T> RemoveById(int id) => _dbSet.Remove(_dbSet.Find(id));
 
         public EntityEntry<T> Update(T entity) => _dbSet.Update(entity);
     }

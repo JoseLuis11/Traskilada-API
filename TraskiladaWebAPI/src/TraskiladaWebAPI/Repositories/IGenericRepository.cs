@@ -19,7 +19,7 @@ namespace TraskiladaWebAPI.Repositories
             CancellationToken cancellationToken = new CancellationToken());
 
         EntityEntry<T> Remove(T entity);
-        EntityEntry<T> RemoveById(Guid id);
+        EntityEntry<T> RemoveById(int id);
         EntityEntry<T> Update(T entity);
     }
 }
