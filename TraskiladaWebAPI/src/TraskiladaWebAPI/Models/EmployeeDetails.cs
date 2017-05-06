@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace TraskiladaWebAPI.Models
 {
-    public class EmployeeDetails : BaseModel
+    public class EmployeeDetail : BaseModel
     {
         public int UserId { get; set; }
         public ICollection<WorkPlace> Workplaces { get; set; }
