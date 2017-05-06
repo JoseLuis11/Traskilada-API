@@ -4,12 +4,20 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using TraskiladaWebAPI.Models;
+using TraskiladaWebAPI.Context;
 
 namespace TraskiladaWebAPI.Controllers
 {
     [Route("api/[controller]")]
     public class ReviewController : Controller
     {
+
+        private readonly TraskiladaContext _context;
+
+        public ReviewController(TraskiladaContext context)
+        {
+            _context = context;
+        }
 
         // GET api/values
         [HttpGet]
