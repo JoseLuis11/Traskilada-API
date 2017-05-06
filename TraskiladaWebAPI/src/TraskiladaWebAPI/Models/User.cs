@@ -7,6 +7,7 @@ namespace TraskiladaWebAPI.Models
         public int Name { get; set; }
         public string LastName { get; set; }
         public string PhoneNumber { get; set; }
-        public ICollection<EmployeeDetail> EmployeeDetails { get; set; }
+        public int EmployeeDetailId { get; set; }
+        public EmployeeDetail EmployeeDetail { get; set; }
     }
 }
