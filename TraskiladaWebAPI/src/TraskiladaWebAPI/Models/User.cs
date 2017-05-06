@@ -1,9 +1,9 @@
 namespace TraskiladaWebAPI.Models
 {
-    public class User
+    public class User : BaseModel 
     {
-        public int name { get; set; }
-        public string lastName { get; set; }
-        public string phoneNumber {get ; set; }
+        public int Name { get; set; }
+        public string LastName { get; set; }
+        public string PhoneNumber {get ; set; }
     }
 }
