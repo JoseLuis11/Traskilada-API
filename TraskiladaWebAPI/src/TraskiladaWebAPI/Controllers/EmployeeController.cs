@@ -8,7 +8,7 @@ using TraskiladaWebAPI.Models;
 namespace TraskiladaWebAPI.Controllers
 {
     [Route("api/[controller]")]
-    public class ClientController : Controller
+    public class EmployeeController : Controller
     {
 
         // GET api/values

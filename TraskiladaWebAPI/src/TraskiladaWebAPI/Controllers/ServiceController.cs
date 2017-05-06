@@ -8,32 +8,32 @@ using TraskiladaWebAPI.Models;
 namespace TraskiladaWebAPI.Controllers
 {
     [Route("api/[controller]")]
-    public class ClientController : Controller
+    public class ServiceController : Controller
     {
 
         // GET api/values
         [HttpGet]
-        public IEnumerable<User> Get()
+        public IEnumerable<Service> Get()
         {
             return null;
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public User Get(int id)
+        public ClientController Get(int id)
         {
             return null;
         }
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]User value)
+        public void Post([FromBody]ClientController value)
         {
         }
 
         // PUT api/values/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]User value)
+        public void Put(int id, [FromBody]ClientController value)
         {
         }
 
