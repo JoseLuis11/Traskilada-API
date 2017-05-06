@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,32 +8,32 @@ using TraskiladaWebAPI.Models;
 namespace TraskiladaWebAPI.Controllers
 {
     [Route("api/[controller]")]
-    public class WorkPlaceController : Controller
+    public class ClientController : Controller
     {
 
         // GET api/values
         [HttpGet]
-        public IEnumerable<WorkPlace> Get()
+        public IEnumerable<ClientController> Get()
         {
-            return null; 
+            return null;
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public WorkPlace Get(int id)
+        public ClientController Get(int id)
         {
             return null;
         }
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]WorkPlace value)
+        public void Post([FromBody]ClientController value)
         {
         }
 
         // PUT api/values/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]WorkPlace value)
+        public void Put(int id, [FromBody]ClientController value)
         {
         }
 
