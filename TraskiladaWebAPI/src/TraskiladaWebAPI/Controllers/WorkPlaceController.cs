@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace TraskiladaWebAPI.Controllers
 {
     [Route("api/[controller]")]
-    public class StoreController : Controller
+    public class WorkPlaceController : Controller
     {
 
         // GET api/values
