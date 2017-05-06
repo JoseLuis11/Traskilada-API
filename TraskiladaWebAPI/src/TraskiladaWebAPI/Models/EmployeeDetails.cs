@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TraskiladaWebAPI.Models
 {
@@ -8,7 +9,8 @@ namespace TraskiladaWebAPI.Models
         public ICollection<WorkPlace> Workplaces { get; set; }
         public ICollection<Service> Services { get; set; }
         public ICollection<Appointment> Appointments { get; set; }
-        public bool IsOwner { get; set; }
-        public User User { get; set; }
+        [NotMapped]
+        public bool IsOwner => Workplaces.Count > 0;
+
     }
 }

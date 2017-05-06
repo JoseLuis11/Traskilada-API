@@ -7,6 +7,7 @@ using TraskiladaWebAPI.Models;
 
 namespace TraskiladaWebAPI.Controllers
 {
+
     [Route("api/[controller]")]
     public class AccountController : Controller
     {
@@ -23,7 +24,8 @@ namespace TraskiladaWebAPI.Controllers
         {
             //TODO: Map from requestDTO to accountModel;
             var account = new Account();
-            return _context.AccountRepository.ValidateCredentials(account).Result.User;
+            var result = await _context.AccountRepository.ValidateCredentials(account);
+            return result.User;
         }
     }
 }
