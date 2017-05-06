@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using TraskiladaWebAPI.Models;
 using TraskiladaWebAPI.Context;
+using System.Threading;
 
 namespace TraskiladaWebAPI.Controllers
 {
@@ -21,34 +22,37 @@ namespace TraskiladaWebAPI.Controllers
 
         // GET api/values
         [HttpGet]
-        public IEnumerable<Service> Get()
+        public async Task<IEnumerable<Service>> Get()
         {
-            return null;
+            return await _context.ServiceRepository.GetAllAsync(CancellationToken.None);
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public Service Get(int id)
+        public async Task<Service> Get(int id)
         {
-            return null;
+            return await _context.ServiceRepository.FindAsync(id, CancellationToken.None);
         }
 
         // POST api/values
         [HttpPost]
         public void Post([FromBody]Service value)
         {
+            _context.ServiceRepository.AddAsync(value);
         }
 
         // PUT api/values/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody]Service value)
         {
+            _context.ServiceRepository.Update(value);
         }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            _context.ServiceRepository.RemoveById(id);
         }
 
     }

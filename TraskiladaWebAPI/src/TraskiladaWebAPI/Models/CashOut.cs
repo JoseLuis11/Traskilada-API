@@ -7,5 +7,6 @@ namespace TraskiladaWebAPI.Models
         public double Amount { get; set; }
         public DateTime DateTime { get; set; }
         public string UserId { get; set; }
+        public User User { get; set; }
     }
 }

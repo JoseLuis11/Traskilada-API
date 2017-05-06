@@ -18,7 +18,7 @@ namespace TraskiladaWebAPI.Context
 
         public TraskiladaContext(DbContextOptions options) : base(options)
         {
-            Database.EnsureCreatedAsync();
+            Database.EnsureCreated();
         }
 
         #region Public Repositories
@@ -47,6 +47,7 @@ namespace TraskiladaWebAPI.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
         }
 
     }

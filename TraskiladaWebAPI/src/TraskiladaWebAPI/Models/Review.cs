@@ -6,5 +6,7 @@ namespace TraskiladaWebAPI.Models
         public string Message { get; set; }
         public int UserId { get; set; }
         public int WorkPlaceId { get; set; }
+
+        public User User { get; set; }
     }
 }
