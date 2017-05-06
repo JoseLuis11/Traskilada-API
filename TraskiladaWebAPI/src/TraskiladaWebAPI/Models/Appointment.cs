@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 namespace TraskiladaWebAPI.Models
 {
     public class Appointment : BaseModel

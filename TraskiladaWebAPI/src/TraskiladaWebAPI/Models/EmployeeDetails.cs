@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace TraskiladaWebAPI.Models
 {
     public class EmployeeDetails : BaseModel
