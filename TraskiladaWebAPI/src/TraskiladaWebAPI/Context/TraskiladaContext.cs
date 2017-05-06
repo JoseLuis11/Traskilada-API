@@ -24,7 +24,7 @@ namespace TraskiladaWebAPI.Context
         #region Public Repositories
         public IGenericRepository<User> UserRepository =>
             _userRepository ?? (_userRepository = new GenericRepository<User>(Users));
-        public IGenericRepository<Appointment> AppointmentRespository =>
+        public IGenericRepository<Appointment> AppointmentRepository =>
             _appointmentRepository ?? (_appointmentRepository = new GenericRepository<Appointment>(Appointments));
         public IGenericRepository<Review> ReviewRepository =>
             _reviewRepository ?? (_reviewRepository = new GenericRepository<Review>(Reviews));

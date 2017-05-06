@@ -24,35 +24,35 @@ namespace TraskiladaWebAPI.Controllers
         [HttpGet]
         public async Task<IEnumerable<Appointment>> Get()
         {
-            return await _context.AppointmentRespository.GetAllAsync(CancellationToken.None);
+            return await _context.AppointmentRepository.GetAllAsync(CancellationToken.None);
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
         public async Task<Appointment> Get(int id)
         {
-            return await _context.AppointmentRespository.FindAsync(id, CancellationToken.None);
+            return await _context.AppointmentRepository.FindAsync(id, CancellationToken.None);
         }
 
         // POST api/values
         [HttpPost]
         public void Post([FromBody]Appointment value)
         {
-            _context.AppointmentRespository.AddAsync(value, CancellationToken.None);
+            _context.AppointmentRepository.AddAsync(value, CancellationToken.None);
         }
 
         // PUT api/values/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody]Appointment value)
         {
-            _context.AppointmentRespository.Update(value);
+            _context.AppointmentRepository.Update(value);
         }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            _context.AppointmentRespository.RemoveById(id);
+            _context.AppointmentRepository.RemoveById(id);
         }
 
     }
