@@ -1,8 +1,8 @@
 namespace TraskiladaWebAPI.Models
 {
-    public enum LoginType : BaseModel
+    public enum LoginType 
     {
         Client = 0,
-        Employee = 1;
+        Employee = 1
     }
 }
