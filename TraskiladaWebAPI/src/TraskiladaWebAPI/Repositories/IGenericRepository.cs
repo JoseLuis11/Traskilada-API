@@ -23,4 +23,3 @@ namespace TraskiladaWebAPI.Repositories
         EntityEntry<T> Update(T entity);
     }
 }
-}
